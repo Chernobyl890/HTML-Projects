@@ -1,0 +1,2 @@
+Saint Leo Gold		Pantone 130 CP	RGB	#FDB813
+Saint Leo Green 	Pantone 554 C	RGB	#00543D
