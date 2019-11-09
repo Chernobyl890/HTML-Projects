@@ -1,0 +1,10 @@
+img {height: 200px; width: 200px;
+border: solid red 3px;
+}
+
+img.player {border-color: navy;}
+img.computer {border-color:green;}
+
+h2.playerh {color:navy;}
+h2.computerh {color:green;}
+.btext {font-size: large; color: red; width: 125%;}

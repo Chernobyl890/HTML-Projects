@@ -1,0 +1,56 @@
+<!-- Shane Irons - November 8, 2019 - Saint Leo University -->
+<!DOCTYPE html>
+<html>
+<head>
+<META charset="utf-8">
+
+<title>Rock Paper Scissors</title>
+
+<!-- Linking external css and external js -->
+<link rel="stylesheet" href="RPSStyles.css">
+<script type="text/javascript" src="RPS.js"></script>
+
+<body>
+
+<h1>Rock, Paper, Scissors!</h1>
+<hr/>
+
+<table>
+<tr><td colspan="3" align="center">
+<!-- images for rock paper and scissor -->
+<img id="rockpic" src="ROCK.jpg">
+<img id="paperpic" src="PAPER.jpg">
+<img id="scissorspic" src="SCISSORS.jpg">
+</td>
+</tr>
+
+<tr>
+<!-- Player and Computer move text -->
+<td><h2 class="playerh"> Player Move</h2></td>
+<td><h2 class="computerh">Computer Move</h2></td>
+<td>&nbsp;</td></tr>
+
+<tr><td>
+<!-- Placeholder questionmark images for player/computer boxes -->
+<img class="player" id="playermove" src="QUESTION.jpg" />
+</td><td>
+<img class="computer" id="computermove"src="QUESTION.jpg" />
+</td>
+
+<td align="center">
+<form name="f1">
+<!-- Text box where score is and reset button -->
+<input id="usertxt" class="btext" type="text" />
+<br/>
+<input id="rst" type="button" value="Reset" />
+</form>
+
+</td>
+</tr>
+</table>
+
+<hr/>
+<!-- Calling init() function -->
+<script>init();</script>
+</body>
+</html>
