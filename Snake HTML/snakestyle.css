@@ -1,0 +1,164 @@
+/* Google Font */
+<link href="https://fonts.googleapis.com/css?family=Modak&display=swap"rel="stylesheet">
+
+/* Mouse interaction */
+::selection {color:white; background:transparent;}
+::-moz-selection {color:white; background:transparent;}
+
+/* General styles */
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Modak", cursive;
+}
+body{
+  background-color: #00543D;
+}
+.wrap{
+  margin-left: auto;
+  margin-right: auto;
+}
+header{
+  width: 340px;
+  font-size: 0;
+}
+footer{
+  background-color: #FDB813;
+  border-top: solid white 5px;
+}
+/* Canvas where the game is displayed and played */
+canvas{
+  display: none;
+  border-style: solid;
+  border-width: 10px;
+  border-color: white;
+}
+canvas:focus{
+  display: none;
+  border-style: solid;
+  border-width: 10px;
+  border-color: white;
+  outline: none;
+}
+
+/* Heading and Score styles */
+h1{
+  display: inline-block;
+  width: 100px;
+  font-size: 32px;
+  color: #FDB813;
+}
+.score{
+  display: inline-block;
+  width: 240px;
+  font-size: 20px;
+  color: #FDB813;
+  text-align: right;
+}
+.score-value{
+  font-size: inherit;
+}
+
+/* Animaion popup for mouse hover */
+#gameover a, #setting a, #menu a{
+  display: block;
+}
+
+#gameover a, #setting a:hover, #menu a:hover{
+  cursor: pointer;
+}
+
+/* In gameover screen, setting screen,
+and main menu have "o" appear when hover */
+#gameover a:hover::before, #setting a:hover::before, #menu a:hover::before{
+  content: "o";
+  margin-right: 10px;
+}
+
+/* Menu Screen */
+#menu{
+  display: block;
+  width: 340px;
+  padding-top: 95px;
+  padding-bottom: 95px;
+  font-size: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: #FDB813;
+}
+
+/* Calling animations for the main menu */
+#menu h2{
+  -webkit-animation: logo-ani 1000ms linear infinite;
+    animation: logo-ani 1000ms linear infinite;
+  margin-bottom: 30px;
+}
+
+#menu a{
+  font-size: 30px;
+}
+
+/* Keyframe webkit for logo animation */
+@-webkit-keyframes logo-ani{
+  50%{-webkit-transform: scale(1.2,1.2);}
+  100%{-webkit-transform: scale(1.0,1.0);}
+}
+
+/* Animation of pulsing "Snake" header */
+@keyframes logo-ani{
+  50%{transform: scale(1.1,1.1);}
+  100%{transform: scale(1.0,1.0);}
+}
+
+/* Game Over style */
+#gameover{
+  display: none;
+  width: 340px;
+  padding-top: 95px;
+  padding-bottom: 95px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 30px;
+  color: #FDB813;
+}
+
+#gameover p{
+  margin-top: 25px;
+  font-size: 20px
+}
+
+/* Setting screen styles */
+#setting{
+  display: none;
+  width: 340px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 85px;
+  padding-bottom: 85px;
+  font-size: 30px;
+  color: #FDB813;
+  text-align: center;
+}
+
+#setting h2{
+    margin-bottom: 15px;
+}
+
+#setting p{
+    margin-top: 10px;
+}
+
+#setting input{
+    display:none;
+}
+
+#setting label{
+    cursor: pointer;
+}
+
+#setting input:checked + label{
+    background-color: lightgoldenrodyellow;
+    color: #000;
+}
